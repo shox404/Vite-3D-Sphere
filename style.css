@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.webgl {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+nav {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  cursor: pointer;
+}
+
+.title {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  font-size: clamp(2rem, 5vw, 3rem);
+  top: 75%;
+  left: 50%;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    padding: 2rem;
+  }
+  nav ul {
+    gap: 10px;
+  }
+}
